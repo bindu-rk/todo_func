@@ -20,7 +20,6 @@ function AddTodo() {
       .then(data => {
         setTodos([...todos, data]);
       });
-    //setTodos([...todos, newTodo]);
     setTitle("");
   };
 

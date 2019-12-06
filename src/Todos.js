@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import TodoItem from "./TodoItem";
-// import AddTodo from "./AddTodo";
 import { TodoContext } from "./TodoContext";
 
 function Todos() {
@@ -34,8 +33,6 @@ function Todos() {
     })
       .then(res => setTodos([...todos].filter(todo => todo.id !== id)))
       .catch(err => console.log(err));
-
-    // setTodos([...todos].filter(todo => todo.id !== id));
   };
 
   return (
